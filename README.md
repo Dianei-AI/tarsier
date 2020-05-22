@@ -6,7 +6,7 @@ npm install dn-tarsier
 
 在 main.js文件中
 import DnTarsier from 'dn-tarsier';
-import 'dn-tarsier/lib/css/style.css';
+import 'dn-tarsier/lib/css/style.css'
 VUe.use(DnTarsier);
 
 导入dicomView
