@@ -55,7 +55,7 @@
 				showInfo: false,
 				//	leftMouse: 'ZoomTouchPinch', Pan ,ZoomMouseWheel
 				leftMouse: 'Wwwc',
-				storeId: 'b1ac9b42900611ea8dda0242ac140007'
+				storeId: '72604f6a2dd211ea9f840242ac140012'
 			};
 		},
 		mounted: function () {
