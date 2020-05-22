@@ -45,7 +45,6 @@
 						:key="key"
 						:label="item"
 						:value="key"
-						v-if="key !== '000'"
 					></el-option>
 				</el-select>
 				<div class="btns">
