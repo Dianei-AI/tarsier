@@ -55,18 +55,18 @@ export default {
 	position: absolute;
 	top: 10px;
 	right: 0;
-	width: 0.6rem;
+	width: 12px ;
 	height: calc(100% - 20px);
 	.vue-slider {
 		height: 100% !important;
 		padding: 0 !important;
-		width: 0.6rem !important;
+		width: 10px !important;
 		.vue-slider-rail {
 			background-color: rgba(14, 43, 64, 1);
 			border-radius: 15px;
 			.vue-slider-process {
-				width: 0.3rem !important;
-				left: 0.15rem !important;
+				width: 10px !important;
+				left: 0px !important;
 				background-color: rgba(14, 100, 216, 1);
 				border-radius: 15px;
 			}

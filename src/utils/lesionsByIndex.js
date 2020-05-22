@@ -11,7 +11,7 @@
 	return index;
 }
  */
-function initLesionsByIndex(data, cb) {
+function initLesionsByIndex(data,cb) {
 	// 构造lesionByIndex 用于在canvas上绘制图形 结节信息按照所在层数Index排列，{1:[{},{}],20:[]}
 	// key代表帧数，如果当前帧数上有超过一个结节，则此数组上添加个indexofCurrentZ属性
 	// 代表这一帧当前高亮显示的结节,默认显示这个值
@@ -63,4 +63,4 @@ function initLesionsByIndex(data, cb) {
 	return lesionsByIndex
 }
 
-export default initLesionsByIndex
+export { initLesionsByIndex }

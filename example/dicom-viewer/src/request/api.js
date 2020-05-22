@@ -6,5 +6,6 @@ axios.defaults.baseURL = base;
 
 export default {
 	singleImgUrl: (storeId, chunk) => `${base}store/${storeId}/download?chunk=${chunk}`,
-	image: (token, imageId) => `images/${imageId}?token=${token}`
+	image: (token, imageId) => `images/${imageId}?token=${token}`,
+	lesions: (detectId) => `${base}detections/${detectId}/lesions`,
 };

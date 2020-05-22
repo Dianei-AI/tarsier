@@ -1,12 +1,13 @@
 import axios from 'axios';
-import store from '../store';
+// import store from '../store';
 import api from './api';
 import { Message } from 'element-ui';
+import { token } from  '../views/data'
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 // 请求拦截
 axios.interceptors.request.use(
 	(config) => {
-		const token = store.state.token;
+		// const token = store.state.token;
 		if (token) {
 			config.headers['DN-Token'] = token;
 		}
@@ -30,4 +31,8 @@ axios.interceptors.response.use(
 
 export function getImageNameList(token, imageId) {
 	return axios.get(api.image(token, imageId));
+}
+
+export function getLesions(detectId) {
+	return axios.get(api.lesions(detectId));
 }

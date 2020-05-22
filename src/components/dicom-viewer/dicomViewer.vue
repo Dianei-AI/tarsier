@@ -82,6 +82,10 @@
 				type: String,
 				default: 'red'
 			},
+			goToImageIndex: {
+				type: Number,
+				default: 0
+			},
 			// 影像来源
 			dicomSource: {
 				type: String,
@@ -112,7 +116,7 @@
 			},
 			imgSort: {
 				type: String,
-				default: 'top'
+				default: 'bottom'
 			},
 			tools: {
 				type: Array,
@@ -190,6 +194,9 @@
 			}
 		},
 		watch: {
+			goToImageIndex(val) {
+				this.currentImageIndex = val
+			},
 			flip: {
 				deep: true,
 				handler(val) {
@@ -262,7 +269,7 @@
 					this.renderImage(val); //渲染图片
 					this.updateCurrentLesionInfo(val);
 				}
-				this.$emit('changImageIndex', val);
+				// this.$emit('changImageIndex', val);
 			}
 		},
 		methods: {
@@ -704,6 +711,7 @@
 			this.initImageIds();
 			this.cornerstoneConfig();
 			this.renderFirstImage();
+			// this.currentNodule = this.noduleList.length > 0 ? this.noduleList[0] : {};
 			window.addEventListener('keyup', this.handleKeyUp);
 			window.addEventListener('keydown', this.handleKeyDown);
 		},

@@ -7,6 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './assets/styles/reset.scss';
 import './assets/styles/iconfont.scss';
 import 'lib-flexible/flexible.js'
+import './filters'
 import i18n from './lang';
 Vue.config.productionTip = false;
 Vue.use(ElementUI);

@@ -27,6 +27,7 @@
 				ref="dicomViewer"
 			></dicom-viewer>
 		</main>
+
 	</div>
 </template>
 <script>
@@ -41,6 +42,7 @@
 		},
 		data() {
 			return {
+				selectAll:true,
 				token,
 				baseName: baseNames.chunks,
 				isLocal:false,
@@ -71,6 +73,7 @@
 			initImageIds(this.storeId, this.baseName);
 		},
 		methods: {
+
 			netRequest() {
 			this.isLocal = false;
 				// document.getElementById('fileUpload').value = null;

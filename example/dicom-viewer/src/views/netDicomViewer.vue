@@ -83,7 +83,7 @@
 				showInfo: false,
 				//	leftMouse: 'ZoomTouchPinch', Pan ,ZoomMouseWheel
 				leftMouse: 'Wwwc',
-				storeId: '1efd70a489cc11eaa8a50242ac140007'
+				storeId: '72604f6a2dd211ea9f840242ac140012'
 			};
 		},
 		mounted: function () {
