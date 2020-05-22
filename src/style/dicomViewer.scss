@@ -1,0 +1,115 @@
+.dn-pkg-dicom-viewer {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	background: #000;
+	.dicom-viewer-main {
+		flex: 1;
+		height: 100%;
+		position: relative;
+		padding: 10px;
+		.canvasContainer {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 800px;
+			width: 800px;
+			max-height: 100%;
+			max-width: 100%;
+			transform: translate(-50%, -50%);
+			.canvas {
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				.cornerstone-canvas {
+					height: 100% !important;
+					width: 100% !important;
+				}
+			}
+			.contextmenu {
+				display: none;
+				position: absolute;
+				z-index: 10;
+				color: #fff;
+
+				ul {
+					background: rgba(14, 43, 64, 1);
+				}
+
+				li {
+					white-space: nowrap;
+					font-size: 0.6rem;
+					text-align: center;
+					padding: 0.5rem;
+					width: 6rem;
+					.child-menu {
+						height: min-content;
+						position: absolute;
+						right: -6rem;
+						top: 0;
+						color: #fff;
+					}
+
+					&:hover {
+						background-color: rgba(14, 100, 216, 1);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.progress-container {
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		display: inline-block;
+		background: rgba(14, 43, 64, 1);
+		border-radius: 5px;
+		padding: 15px 20px 10px 20px;
+		.progress {
+			.el-progress-circle {
+				height: 80px !important;
+				width: 80px !important;
+			}
+			.el-progress__text {
+				color: #fff;
+			}
+		}
+		.text {
+			text-align: center;
+			font-size: 14px;
+			color: #fff;
+		}
+	}
+	.mark-dialog {
+		background-color: #0e2b40;
+		font-size: 13px;
+		display: inline-block;
+		min-width: 250px;
+		padding: 20px 16px;
+		.el-input__icon {
+			line-height: 1 !important;
+		}
+		.btns {
+			margin-top: 20px;
+			text-align: center;
+
+			.btn {
+				background-color: transparent;
+				color: #fff;
+				border-color: rgba(14, 100, 216, 1);
+			}
+		}
+
+		.el-select {
+			margin-left: 10px;
+			width: 160px;
+			.el-input__inner {
+				height: 30px;
+				background: #000;
+				color: #fff;
+				font-size: 13px;
+			}
+		}
+	}
+}
